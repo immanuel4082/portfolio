@@ -7,7 +7,7 @@
 
 :root{
     --color-primary: #191d2b;
-    --color-secondary: #D2B48C;
+    --color-secondary: #27ae60;
     --color-white: white;
     --color-black: #000;
     --color-grey0: #DCDCDC;
@@ -73,21 +73,23 @@ section{
     transform: translateY(0) scale(1);
 }
 
+//controls
 .controls{
     position: fixed;
     z-index: 10;
     top: 50%;
     right: 3%;
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     transform: translateY(-50%);
-    .active-btn
-}
     .active-btn{
-        background-color: #27ae60;
+        background-color: var(--color-secondary) !important;
         transition: all .4s ease-in-out;
+        i{
+            color: var(--color-white) !important;
+        }
     }
     .control{
         padding: 1rem;
@@ -101,11 +103,10 @@ section{
         align-items: center;
         margin: .7rem 0;
         box-shadow: var(--box-shadow-1);
-    }
-        .i{
-            font-size: 1.3rem;
+        i{
+            font-size: 1.2rem;
             color: var(--color-grey3);
             pointer-events: none;
         }
-    
-
+    }
+}
