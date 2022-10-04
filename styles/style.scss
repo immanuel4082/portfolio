@@ -47,30 +47,55 @@ section{
     top: 0;
     padding: 3rem 18rem;
 }
+
 .section{
     transform: translateY(-100%) scale(0);
     transition: all .4s ease-in-out;
     background-color: var(--color-primary);
 }
+
 .sec1{
     display: none;
     transform: translateY(0) scale(1);
+    background-color: blueviolet;
 }
+
 .sec2{
     display: none;
     transform: translateY(0) scale(1);
+    background-color: gold;
 }
+
 .sec3{
     display: none;
     transform: translateY(0) scale(1);
+    background-color: royalblue;
 }
+
 .sec4{
     display: none;
     transform: translateY(0) scale(1);
+    background-color: tomato;
 }
+
 .sec5{
     display: none;
     transform: translateY(0) scale(1);
+    background-color: teal;
+}
+
+.active{
+    display: block;
+    animation: scaleAnim .5s ease-in-out;
+    @keyframes scaleAnim {
+        0%{
+            transform: translateY(-100%) scaleY(0);
+        }
+
+        100%{
+            transform: translateY(-100%) scaleY(1);
+        }
+    }
 }
 
 //controls
