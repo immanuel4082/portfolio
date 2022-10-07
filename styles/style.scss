@@ -45,7 +45,7 @@ section{
     position: absolute;
     left: 0;
     top: 0;
-    padding: 3rem 18rem;
+    padding: 3rem 5rem;
 }
 
 .section{
@@ -175,9 +175,16 @@ section{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding-right: 18rem;
+        padding-right: 5rem;
         .name{
             font-size: 2rem;
+            color: var(--color-secondary);
+            span{
+                color: var(--color-white);
+            }
+        }
+        .career{
+            font-size: 1.5rem;
             span{
                 color: var(--color-secondary);
             }
@@ -199,7 +206,7 @@ section{
     .right-about{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-gap: 1rem;
+        grid-gap: .5rem;
         .about-item{
             border: 1px solid var(--color-grey7);
             border-radius: 5px;
@@ -216,7 +223,7 @@ section{
                 display: flex;
                 flex-direction: column;
                 .large-text{
-                    font-size: 3rem;
+                    font-size: 2rem;
                     font-weight: 700;
                     color: var(--color-secondary);
                 }
@@ -224,7 +231,7 @@ section{
                     padding-left: 3rem;
                     position: relative;
                     text-transform: uppercase;
-                    font-size: 1.2rem;
+                    font-size: 1rem;
                     color: var(--color-grey3);
                     letter-spacing: 2px;
                     &::before{
@@ -241,19 +248,60 @@ section{
         }
     }
 
-    .left-about{
-        padding-right: 0rem;
+   .left-about{
+        padding-right: .5rem;
         p{
             line-height: 2rem;
             padding: 1rem;
             color: var(--color-grey3);
         }
         h4{
-            font-size: 2rem;
+            font-size: 1.5rem;
             text-transform: uppercase;
         }
     }
 }
+
+/*contact section*/
+.contact-content-con{
+    display: flex;
+    padding-top: 3.5rem;
+    .left-contact{
+        flex: 2;
+    }
+
+    .right-contact{
+        flex: 3;
+        margin-left: 3rem;
+        .input-control{
+            margin: 1.5rem;
+            input, textarea{
+                border-radius: 30px;
+                font-weight: inherit;
+                font-size: inherit;
+                font-family: inherit;
+                padding: .8rem 1.1rem;
+                outline: none;
+                border: none;
+                background-color: var(--color-grey7);
+                width: 100%;
+                color: var(--color-white);
+                resize: none;
+            }
+        }
+        .i-c-2{
+            display: flex;
+            :last-child{
+                margin-left: 1.5rem;
+            }
+        }
+        .submit-btn{
+            display: flex;
+            justify-content: flex-start;
+        }
+    }
+}
+
 
 /*indipendent component*/
 .btn-con{
@@ -306,8 +354,8 @@ section{
     h2{
         position: relative;
         text-transform: uppercase;
-        font-size: 4rem;
-        font-weight: 700;
+        font-size: 3rem;
+        font-weight: 600;
         span{
             color: var(--color-secondary);
         }
